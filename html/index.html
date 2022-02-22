@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" ng-app="chatApp">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon - icon that appears in browser tabs -->
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicons/favicon.ico" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href=../css/animate.css> <link rel="stylesheet" href=../css/basic_style.css> <title>Chat App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="row top-row">
+    <div class="column left-column">
+
+      <div class="jumbotron-left container-fluid">
+        Active Chats
+      </div>
+
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#">Person 1</a>
+        <a class="nav-link" href="#">Person 2</a>
+        <a class="nav-link" href="#">Person 3</a>
+        <a class="nav-link" href="#">Person 4</a>
+        <a class="nav-link" href="#">Person 5</a>
+        <a class="nav-link" href="#">Person 6</a>
+        <a class="nav-link" href="#">Person 7</a>
+        <a class="nav-link" href="#">Person 8</a>
+        <a class="nav-link" href="#">Person 9</a>
+        <a class="nav-link" href="#">Person 10</a>
+        <a class="nav-link" href="#">Person 11</a>
+        <a class="nav-link" href="#">Person 12</a>
+        <a class="nav-link new-chat" href="#">Create New Chat</a>
+      </nav>
+    </div>
+
+    <div class="column main-column">
+      <div class="jumbotron-right container-fluid">
+        Testing
+      </div>
+
+      <div class="main-chat">
+
+        <div class="chat-text" id="mainChatText"></div>
+
+        <form onsubmit="submitChatText()">
+          <input class="chat-bubble form-control" id="chatInput" type="text" placeholder="Enter text..."></input>
+          <input type="submit" style="display: none"></input>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div ng-view> </div>
+
+  <script type="text/ng-template" id="home.htm">
+
+    <div class="flex-container homeCont">
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="../app/angular.min.js"></script>
+  <script src="../app/angular-route.min.js"></script>
+  <script src="../app/angular-animate.min.js"></script>
+  <script src="../app/relocate.js"></script>
+  <script src="../app/app.js"></script>
+  <script src="../app/chatController.js"></script>
+  <script src="../app/pageScaling.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
